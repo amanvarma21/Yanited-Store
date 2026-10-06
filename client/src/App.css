@@ -680,6 +680,30 @@ body {
   .checkout-item-controls {
     align-items: flex-start;
   }
+
+  /* Make the navbar search input usable on small screens */
+  .search-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Keep the Home/Cart icons visible and aligned when the navbar stacks */
+  .navbar-links {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  /* Allow the brand (logo + title) to shrink gracefully */
+  .navbar-brand {
+    flex-wrap: wrap;
+  }
+
+  /* Top bar auth actions wrap instead of overflowing on narrow screens */
+  .topbar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 }
 
 .footer {
